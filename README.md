@@ -19,7 +19,7 @@ ln -s ~/code/ruthless-simplicity/SKILL.md ~/.claude/skills/ruthless-simplicity/S
 Add one line to `~/.claude/CLAUDE.md` so it loads every session:
 
 ```
-Ruthless simplicity is the standing gate: cat ~/.claude/skills/ruthless-simplicity/SKILL.md at the start of every session and at the top of every subagent brief.
+Read ~/.claude/skills/ruthless-simplicity/SKILL.md at the start of every session.
 ```
 
 oh-my-pi, always on (the frontmatter carries `alwaysApply: true`):
@@ -43,4 +43,4 @@ Bending Spoons on radical simplicity, Steve Jobs on one window and one button, A
 
 ## Change it
 
-Edit SKILL.md. Shorter is better. A rule earns its line by changing a decision.
+Edit SKILL.md. Shorter is better. A rule earns its line by changing a decision. The first draft was 160 lines; a reviewer cut it to under 50 by the skill's own rule.
