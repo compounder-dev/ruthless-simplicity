@@ -37,6 +37,10 @@ idea. No wrappers that only pass through, no `any`, no casts hiding a real
 invariant, no new `if` bolted onto an unrelated flow. Logic lives in the
 layer that owns it. Fix a bug at the root, once, for every caller.
 
+Every fact has one owner. Compute the rest from it. A stored copy needs
+sync code, so a copy must earn its place like a cache: named, with an owner
+that repairs it.
+
 Nothing ships ahead of its first user. Name what runs this code the day it
 merges: a caller, a config value, a real request. If nothing does, do not
 merge it. Version control keeps it until someone needs it.
