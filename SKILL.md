@@ -37,9 +37,15 @@ idea. No wrappers that only pass through, no `any`, no casts hiding a real
 invariant, no new `if` bolted onto an unrelated flow. Logic lives in the
 layer that owns it. Fix a bug at the root, once, for every caller.
 
+Nothing ships ahead of its first user. Name what runs this code the day it
+merges: a caller, a config value, a real request. If nothing does, do not
+merge it. Version control keeps it until someone needs it.
+
 ## Reviews
 
 Subtraction pass first: what can be deleted from this diff with no loss?
+Reachable is not used. For every flag, optional field or mode, find what
+turns it on in production. If nothing does, the fix is deletion.
 Then a few high conviction structural findings. No nit flood.
 
 ## Git
