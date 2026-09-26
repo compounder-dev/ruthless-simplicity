@@ -20,6 +20,9 @@ Before adding anything: what happens if we do not? If the answer is
    installed dependency.
 3. Write the shortest boring thing that works.
 
+Then ask of whatever stays: is this the most efficient, simple and
+tasteful way of doing this? Keep asking it as the work goes on.
+
 Never strip validation at a trust boundary, error handling that guards
 data, or security to get there.
 
