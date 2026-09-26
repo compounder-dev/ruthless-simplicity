@@ -6,25 +6,29 @@ alwaysApply: true
 
 # Ruthless simplicity
 
-Models get smarter and add more. More code is more bugs. More words on a
-screen is more confusion. More features is less retention. So the burden
-of proof sits on whoever adds. Simplicity never has to justify itself.
+Simplicity is how we go faster, not how we do less. Every line of code,
+word on a screen and feature carries weight, so extra weight earns its
+place. Ambition never has to: the boldest capability, built in its
+simplest form, is the goal.
 
 ## The one question
 
-Before adding anything: what happens if we do not? If the answer is
-"nothing much", do not add it. Otherwise, in this order:
+> Is this the most efficient, simple and tasteful way of doing this?
+
+Ask it before you start, while you work and before you ship. Efficient:
+fastest for the user, cheapest to run. Simple: the fewest parts, lines and
+words. Tasteful: it reads as inevitable.
+
+Before adding anything, ask what happens without it. If the answer is
+"nothing much", leave it out. Otherwise, in this order:
 
 1. Delete the thing that made the addition feel necessary.
 2. Reuse what exists: the repo helper, the stdlib, the platform, the
    installed dependency.
 3. Write the shortest boring thing that works.
 
-Then ask of whatever stays: is this the most efficient, simple and
-tasteful way of doing this? Keep asking it as the work goes on.
-
-Never strip validation at a trust boundary, error handling that guards
-data, or security to get there.
+Validation at a trust boundary, error handling that guards data, and
+security always stay.
 
 ## Interfaces
 
@@ -36,9 +40,10 @@ Visual beats verbal. Verify on a phone before calling it done.
 
 Look before writing. Delete before adding. Prefer the reframe that makes
 whole branches, modes or layers disappear over a tidier version of the same
-idea. No wrappers that only pass through, no `any`, no casts hiding a real
-invariant, no new `if` bolted onto an unrelated flow. Logic lives in the
-layer that owns it. Fix a bug at the root, once, for every caller.
+idea. Wrappers earn their keep by clarifying. Types state the real
+invariant. New behavior gets its own home instead of an `if` in an
+unrelated flow. Logic lives in the layer that owns it. Fix a bug at the
+root, once, for every caller.
 
 Every fact has one owner. Compute the rest from it. A stored copy needs
 sync code, so a copy must earn its place like a cache: named, with an owner
